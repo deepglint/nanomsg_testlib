@@ -11,7 +11,7 @@
 void sendMessage(struct NanoSenderSession* this, char *msg)
 {
   int sz_msg = strlen (msg); // '\0' too
-  int bytes = nn_send (this->sock, msg, sz_msg, 0);
+  int bytes = nn_send (this->sock, msg, sz_msg, NN_DONTWAIT);
   printf("send ok\n");
   return;
   //assert (bytes == sz_msg);
