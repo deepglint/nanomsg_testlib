@@ -1,4 +1,5 @@
 IN THE LINUX SYSTEM SHOULD COMPILE THE FILE LIKE THIS
+
 gcc receiver.c /usr/local/lib/libnanomsg.a  -o receiver3 -pthread -lanl
 
 gcc -Wall -c sender.c /usr/local/lib/libnanomsg.so -I 
